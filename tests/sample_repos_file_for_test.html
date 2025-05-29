@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Results</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .test-section {
+            margin-top: 30px;
+        }
+        .test-section h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .test-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .test-card p {
+            margin: 5px 0;
+        }
+        .passed {
+            color: green;
+        }
+        .failed {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Test Results Summary</h1>
+
+    <div class="test-section">
+        <h2>Repository Tests</h2>
+        <div class="test-card">
+            <p><strong>Repository:</strong> fastapi/fastapi</p>
+            <p><strong>Test Count:</strong> 120</p>
+            <p><strong>Passed:</strong> <span class="passed">118</span></p>
+            <p><strong>Failed:</strong> <span class="failed">2</span></p>
+        </div>
+        <div class="test-card">
+            <p><strong>Repository:</strong> pydantic/pydantic</p>
+            <p><strong>Test Count:</strong> 80</p>
+            <p><strong>Passed:</strong> <span class="passed">80</span></p>
+            <p><strong>Failed:</strong> <span class="failed">0</span></p>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Issue-Related Tests</h2>
+        <div class="test-card">
+            <p><strong>Issue:</strong> #234 - "Bug in login system"</p>
+            <p><strong>Status:</strong> <span class="failed">Failed</span></p>
+            <p><strong>Details:</strong> TestLoginFailure failed due to timeout.</p>
+        </div>
+        <div class="test-card">
+            <p><strong>Issue:</strong> #235 - "Add new user roles"</p>
+            <p><strong>Status:</strong> <span class="passed">Passed</span></p>
+            <p><strong>Details:</strong> Role assignment tests passed successfully.</p>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>Wiki-Related Tests</h2>
+        <div class="test-card">
+            <p><strong>Wiki Page:</strong> "Installation Guide"</p>
+            <p><strong>Status:</strong> <span class="passed">Passed</span></p>
+            <p><strong>Checked:</strong> Markdown format, code blocks, links</p>
+        </div>
+    </div>
+
+</body>
+</html>
