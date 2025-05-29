@@ -1,4 +1,4 @@
-# 🕷️ GitHub HTML Crawler
+# GitHub HTML Crawler
 
 A fast and lightweight GitHub crawler that searches for Repositories, Issues or Wikis \
 using raw HTML — no GitHub API needed. Supports random proxy usage and Unicode keywords.
@@ -9,7 +9,7 @@ using raw HTML — no GitHub API needed. Supports random proxy usage and Unicode
 pip install -r requirements.txt
 ```
 
-## 🧪 Usage
+## Usage
 
 Run the crawler using:
 
@@ -19,7 +19,7 @@ python run.py
 
 Input should be provided via `input.json` (example below):
 
-### 📁 input.json
+### input.json
 
 ```json
 {
@@ -31,7 +31,7 @@ Input should be provided via `input.json` (example below):
 
 The output will be saved to `github_results.json`
 
-## ✅ Testing
+## Testing
 
 ### Run Unit Tests
 
@@ -39,7 +39,7 @@ The output will be saved to `github_results.json`
 python -m unittest discover tests
 ```
 
-### 🧪 Coverage Report
+### Coverage Report
 
 Generate coverage:
 
@@ -53,7 +53,7 @@ Show the report:
 coverage report -m
 ```
 
-## 📊 Example Output
+## Example Output
 
 `github_results.json`:
 
